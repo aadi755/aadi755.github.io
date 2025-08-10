@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ManageInfinity Discord Bot</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2f;
+      color: #eee;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #3a3a6d;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #f0f0ff;
+      letter-spacing: 2px;
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: #29294c;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #222244aa;
+    }
+
+    h2 {
+      border-bottom: 2px solid #6666cc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: #aabbee;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    ul li {
+      background: #444477;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: 600;
+      color: #ddeeff;
+      user-select: none;
+      box-shadow: 0 2px 4px #111133;
+      transition: background-color 0.3s ease;
+    }
+    ul li:hover {
+      background: #6666cc;
+      cursor: default;
+    }
+
+    /* Invite button */
+    .invite-btn {
+      display: inline-block;
+      background: #5a67d8;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-weight: 700;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px #5a67d8aa;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+    .invite-btn:hover {
+      background: #434aa8;
+      box-shadow: 0 6px 15px #434aa888;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #2a2a4a;
+      font-size: 0.9rem;
+      color: #bbbbee;
+      user-select: none;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      ul {
+        flex-direction: column;
+      }
+      ul li {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ManageInfinity Discord Bot</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Help - List of Commands</h2>
+      <p>Welcome to ManageInfinity bot! Here is a list of commands available.</p>
+    </section>
+
+    <section>
+      <h2>Fun Commands</h2>
+      <ul>
+        <li>cat</li>
+        <li>dadjoke</li>
+        <li>dog</li>
+        <li>flip</li>
+        <li>pug</li>
+        <li>rps</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Misc Commands</h2>
+      <ul>
+        <li>help</li>
+        <li>info</li>
+        <li>stats</li>
+        <li>uptime</li>
+        <li>afk</li>
+        <li>avatar</li>
+        <li>color</li>
+        <li>emotes</li>
+        <li>inviteinfo</li>
+        <li>membercount</li>
+        <li>randomcolor</li>
+        <li>roll</li>
+        <li>serverinfo</li>
+        <li>whois</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Moderation Commands</h2>
+      <ul>
+        <li>ping</li>
+        <li>ban</li>
+        <li>clear</li>
+        <li>deafen</li>
+        <li>kick</li>
+        <li>lock</li>
+        <li>lockdown</li>
+        <li>members</li>
+        <li>mute</li>
+        <li>softban</li>
+        <li>timeout</li>
+        <li>undeafen</li>
+        <li>unlock</li>
+        <li>unmute</li>
+        <li>warn</li>
+        <li>warnings</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Manager Commands</h2>
+      <ul>
+        <li>addemote</li>
+        <li>addmod</li>
+        <li>addrole</li>
+        <li>announce</li>
+        <li>delmod</li>
+        <li>delrole</li>
+        <li>nick</li>
+        <li>purge</li>
+        <li>role</li>
+        <li>rolecolor</li>
+        <li>rolename</li>
+        <li>setnic</li>
+      </ul>
+    </section>
+
+    <section style="text-align:center;">
+      <a href="https://discord.com/oauth2/authorize?client_id=1403752593834115182&permissions=8&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener" class="invite-btn" aria-label="Invite ManageInfinity bot to your Discord server">
+        Invite ManageInfinity Bot
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 ManageInfinity. Created by You.
+  </footer>
+</body>
+</html>
